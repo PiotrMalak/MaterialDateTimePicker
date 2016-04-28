@@ -354,7 +354,7 @@ public class DatePickerDialog extends DialogFragment implements
 
         // If an accent color has not been set manually, get it from the context
         if (mAccentColor == -1) {
-            mAccentColor = Utils.getAccentColorFromThemeIfAvailable(getActivity());
+            mAccentColor = Utils.getAccentColorFromThemeIfAvailable(getActivity(), false);
         }
         if(mDayOfWeekView != null) mDayOfWeekView.setBackgroundColor(Utils.darkenColor(mAccentColor));
         view.findViewById(R.id.day_picker_selected_date_layout).setBackgroundColor(mAccentColor);
